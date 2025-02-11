@@ -3,18 +3,24 @@ workflows:
     name: React Native Android Build
     max_build_duration: 120
     environment:
-      node: 18
-      android: latest
-      java: 17
+      vars:
+        NODE_VERSION: 18
+        JAVA_VERSION: 17
     scripts:
       - name: Install Dependencies
-        script: yarn install  # Or use `npm install`
+        script: |
+          yarn install  # Use `npm install` if using npm
 
       - name: Build APK
-        script: cd android && ./gradlew assembleRelease
+        script: |
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleRelease
 
       - name: Build AAB
-        script: cd android && ./gradlew bundleRelease
+        script: |
+          cd android
+          ./gradlew bundleRelease
 
       - name: Move Artifacts
         script: |
