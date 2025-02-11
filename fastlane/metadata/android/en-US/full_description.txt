@@ -1,0 +1,11 @@
+AI Calculator is an intelligent calculator that not only performs calculations but also explains mathematical concepts, scientific theories, and historical facts. Features include:
+
+• Advanced mathematical calculations
+• Step-by-step problem solving
+• Scientific concept explanations
+• Image recognition for math problems
+• Historical information about scientists and theories
+• Real-time AI-powered assistance
+• Clean, intuitive interface
+
+Perfect for students, teachers, and anyone interested in learning while calculating!
